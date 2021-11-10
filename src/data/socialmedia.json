@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "url": "https://www.behance.net/patrickgattoc",
+        "sitename": "Behance",
+        "class": "body-2"
+    },
+    {
+        "id": 2,
+        "url": "https://dribbble.com/patrickgattoc",
+        "sitename": "Dribbble",
+        "class": "body-2"
+    },
+    {
+        "id": 3,
+        "url": "https://www.instagram.com/pbggraphics/",
+        "sitename": "Instagram",
+        "class": "body-2"
+    },
+    {
+        "id": 4,
+        "url": "https://www.facebook.com/pbggraphics",
+        "sitename": "Facebook",
+        "class": "body-2"
+    },
+    {
+        "id": 5,
+        "url": "https://www.linkedin.com/in/patrick-byron-gattoc-87410295/",
+        "sitename": "LinkedIn",
+        "class": "body-2"
+    }
+]

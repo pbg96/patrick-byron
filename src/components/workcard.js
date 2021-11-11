@@ -1,8 +1,7 @@
 import { props } from 'react'
 
 function Workcard(props) {
-    return (
-        <div className="portfolio-grid">
+    return (        
             <div className="card" data-aos="fade-in">
                 <img src={props.image} alt={props.alt} className=""/>
                 <div className="card-overlay">
@@ -10,7 +9,6 @@ function Workcard(props) {
                     <p className="body-1">{props.title}</p>
                 </div>
             </div>
-        </div>
     );
   }
 

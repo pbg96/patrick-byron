@@ -4,13 +4,11 @@ FONTS
 ===============
 */
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 /*
 ===============
 VARIABLES
 ===============
 */
-
 :root {
   --clr-primary: rgba(250, 250, 250, 1);
   --clr-primary-light: rgba(255, 255, 255, 1);
@@ -32,7 +30,6 @@ VARIABLES
 GLOBAL STYLES
 ===============
 */
-
 *,
 ::after,
 ::before {
@@ -51,14 +48,12 @@ li {
 }
 
 /* LINKS */
-
 a {
   text-decoration: none;
   color: var(--clr-secondary-light);
 }
 
 /* TYPOGRAPHY SCALE */
-
 h1 {
   font-family: Libre Franklin;
   font-style: normal;
@@ -160,7 +155,6 @@ h6 {
 }
 
 /* BUTTON STYLES */
-
 .btn-default {
   width: 200px;
   height: 40px;
@@ -200,7 +194,6 @@ h6 {
 }
 
 /* FORM STYLES */
-
 .input-style {
   width: 260px;
   height: 40px;
@@ -225,9 +218,7 @@ SMALL MOBILE
 280PX 
 ===============
 */
-
 /* Header, Logo, and Button */
-
 .head {
   width: 100vw;
   height: 64px;
@@ -330,7 +321,6 @@ SMALL MOBILE
 }
 
 /* Hero Section */
-
 .hero {
   width: 100vw;
   height: 90vh;
@@ -370,7 +360,6 @@ SMALL MOBILE
 }
 
 /* Work Section */
-
 .works {
   width: 100%;
   /* height: 150vh; */
@@ -384,9 +373,9 @@ SMALL MOBILE
   text-align: center;
   /*align-items: center;*/
   /* position: absolute; */
-  color: rgba(255, 255, 255, 1);
+  color: white;
   /* top: 2.5rem;
-  left: 0; */
+    left: 0; */
   margin-top: 4rem;
 }
 
@@ -434,7 +423,6 @@ SMALL MOBILE
 }
 
 /* Contact Section */
-
 .contact {
   width: 100%;
   background-color: var(--clr-primary);
@@ -449,7 +437,7 @@ SMALL MOBILE
   /* position: absolute; */
   color: var(--clr-secondary-dark);
   /* top: 2.5rem;
-  left: 0; */
+    left: 0; */
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
@@ -496,7 +484,7 @@ SMALL MOBILE
   width: 50%;
   display: flex;
   flex-direction: column;
-  color: rgba(255, 255, 255, 1);
+  color: white;
   margin: 0.5rem;
 }
 
@@ -524,7 +512,7 @@ SMALL MOBILE
   width: 50%;
   display: flex;
   flex-direction: column;
-  color: rgba(255, 255, 255, 1);
+  color: white;
   margin: 0.5rem;
 }
 
@@ -535,17 +523,15 @@ SMALL MOBILE
 }
 
 /* .footer-bottom {
-  display: flex;
-  justify-content: space-around;
-  width: inherit;
-  overflow-x: hidden;
-  height: 24px;
-  text-align: center;
-  margin: 0.5rem;
-} */
-
+    display: flex;
+    justify-content: space-around;
+    width: inherit;
+    overflow-x: hidden;
+    height: 24px;
+    text-align: center;
+    margin: 0.5rem;
+  } */
 /* Privacy Policy */
-
 .privacy-policy {
   margin: 1rem 1rem;
   z-index: 2;
@@ -562,37 +548,11 @@ MOBILE
 h 300PX 
 ===============
 */
-
 @media only screen and (max-height: 550px) {
   .hero-img {
     display: none;
   }
 }
-
-/*
-===============
-MOBILE
-w 360PX
-h 640PX 
-===============
-*/
-
-/*
-===============
-MOBILE
-w 375PX
-h 667PX 
-===============
-*/
-
-/*
-===============
-MOBILE
-w 360PX
-h 720PX 
-===============
-*/
-
 /*
 ===============
 IPHONE X MOBILE
@@ -600,10 +560,8 @@ w 375PX
 h 812PX 
 ===============
 */
-
 @media only screen and (min-width: 375px) {
   /* Hero Section */
-
   .hero-img {
     width: 100%;
     height: 65%;
@@ -619,15 +577,6 @@ h 812PX
     height: 200px;
   }
 }
-
-/*
-===============
-PIXEL 2 MOBILE
-w 411PX
-h 731PX 
-===============
-*/
-
 /*
 ===============
 HALF SCREEN TABLET
@@ -635,8 +584,7 @@ w 411PX
 h 441PX 
 ===============
 */
-
-@media only screen and (min-width: 411px) /* and (min-height: 411px) */ {
+@media only screen and (min-width: 411px) {
   .hero-img {
     width: 50%;
     height: 55%;
@@ -646,7 +594,6 @@ h 441PX
     object-fit: cover;
   }
 }
-
 /*
 ===============
 VERTICAL TABLET
@@ -654,10 +601,8 @@ w 768PX
 h 1024PX 
 ===============
 */
-
 @media only screen and (min-width: 375px) and (min-height: 1024px) {
   /* Header, Logo, and Button */
-
   .head {
     padding: 2rem 2rem;
   }
@@ -698,7 +643,6 @@ h 1024PX
   }
 
   /* Work Section */
-
   .portfolio-grid {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     margin: 4rem;
@@ -709,17 +653,72 @@ h 1024PX
     padding: 1rem 4rem;
   }
 }
+/*
+  ===============
+  TABLET
+  w 768PX
+  ===============
+  */
+@media only screen and (min-width: 768px) {
+  /* Header, Logo, and Button */
+  .head {
+    padding: 2rem 2rem;
+  }
 
+  .navlist {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* Hero Section */
+  .hero {
+    width: 100vw;
+    height: 512px;
+    background: var(--clr-primary);
+    position: relative;
+  }
+
+  .hero-message {
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    right: 0;
+    bottom: 0;
+    margin: 0rem;
+  }
+
+  .hero-img {
+    width: 120%;
+    height: 120%;
+    margin: 0;
+    position: absolute;
+    object-fit: cover;
+    left: 300px;
+    bottom: 0;
+  }
+
+  /* Work Section */
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 4rem;
+  }
+
+  /* Footer */
+  .footer-one {
+    padding: 1rem 4rem;
+  }
+}
 /*
 ===============
 TABLET
 w 768PX
 ===============
 */
-
 @media only screen and (min-width: 768px) {
   /* Header, Logo, and Button */
-
   .head {
     padding: 2rem 2rem;
   }
@@ -760,7 +759,6 @@ w 768PX
   }
 
   /* Work Section */
-
   .portfolio-grid {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     margin: 4rem;
@@ -771,109 +769,37 @@ w 768PX
     padding: 1rem 4rem;
   }
 }
-
-/*
-===============
-TABLET
-w 768PX
-===============
-*/
-
-@media only screen and (min-width: 768px) {
-  /* Header, Logo, and Button */
-
-  .head {
-    padding: 2rem 2rem;
-  }
-
-  .navlist {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  /* Hero Section */
-  .hero {
-    width: 100vw;
-    height: 512px;
-    background: var(--clr-primary);
-    position: relative;
-  }
-
-  .hero-message {
-    width: 50%;
-    text-align: center;
-    align-items: center;
-    position: absolute;
-    top: 20%;
-    left: 5%;
-    right: 0;
-    bottom: 0;
-    margin: 0rem;
-  }
-
-  .hero-img {
-    width: 120%;
-    height: 120%;
-    margin: 0;
-    position: absolute;
-    object-fit: cover;
-    left: 300px;
-    bottom: 0;
-  }
-
-  /* Work Section */
-
-  .portfolio-grid {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    margin: 4rem;
-  }
-
-  /* Footer */
-  .footer-one {
-    padding: 1rem 4rem;
-  }
-}
-
 /*
 ===============
 LAPTOP SCREEN
 w 1000PX
 ===============
 */
-
 @media only screen and (min-width: 1000px) {
   /* Header, Logo, and Button */
-
   /* Hero Section */
-
   .hero-img {
     left: 450px;
   }
 
   /* Work Section */
-
   /* Footer */
 }
-
 /*
 ===============
 LAPTOP SCREEN
 w 1280PX
 ===============
 */
-
 @media only screen and (min-width: 1000px) {
   /* Header, Logo, and Button */
-
   /* Hero Section */
-
   .hero-img {
     left: 450px;
     object-fit: scale-down;
   }
 
   /* Work Section */
-
   .portfolio-grid {
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     margin: 4rem;
@@ -885,25 +811,20 @@ w 1280PX
 
   /* Footer */
 }
-
 /*
 ===============
 LAPTOP SCREEN
 w 1430PX
 ===============
 */
-
 @media only screen and (min-width: 1000px) {
   /* Header, Logo, and Button */
-
   /* Hero Section */
-
   .hero-message {
     padding: 0 6rem 6rem 6rem;
   }
 
   /* Work Section */
-
   .portfolio-grid {
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     margin: 4rem;
@@ -915,3 +836,5 @@ w 1430PX
 
   /* Footer */
 }
+
+/*# sourceMappingURL=index.css.map */

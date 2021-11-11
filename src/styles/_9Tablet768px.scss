@@ -1,0 +1,61 @@
+/*
+===============
+TABLET
+w 768PX
+===============
+*/
+
+@media only screen and (min-width: 768px) {
+  /* Header, Logo, and Button */
+
+  .head {
+    padding: 2rem 2rem;
+  }
+
+  .navlist {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* Hero Section */
+  .hero {
+    width: 100vw;
+    height: 512px;
+    background: var(--clr-primary);
+    position: relative;
+  }
+
+  .hero-message {
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    right: 0;
+    bottom: 0;
+    margin: 0rem;
+  }
+
+  .hero-img {
+    width: 120%;
+    height: 120%;
+    margin: 0;
+    position: absolute;
+    object-fit: cover;
+    left: 300px;
+    bottom: 0;
+  }
+
+  /* Work Section */
+
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 4rem;
+  }
+
+  /* Footer */
+  .footer-one {
+    padding: 1rem 4rem;
+  }
+}

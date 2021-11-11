@@ -1,0 +1,30 @@
+/*
+===============
+LAPTOP SCREEN
+w 1280PX
+===============
+*/
+
+@media only screen and (min-width: 1000px) {
+  /* Header, Logo, and Button */
+
+  /* Hero Section */
+
+  .hero-img {
+    left: 450px;
+    object-fit: scale-down;
+  }
+
+  /* Work Section */
+
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    margin: 4rem;
+  }
+
+  .card {
+    height: 250px;
+  }
+
+  /* Footer */
+}

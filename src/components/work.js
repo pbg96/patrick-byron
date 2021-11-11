@@ -8,9 +8,11 @@ function Work() {
         <h3>What's cooking?</h3>
         <h6>Here's a curation of some of my works.</h6>
         </div>
+        <div className="portfolio-grid">
         {Workinfo.map((info,index) => {
           return <Workcard id={info.id} image={info.image} alt={info.alt} title={info.title} category={info.category} />
          })}
+        </div>
     </section>
     );
   }

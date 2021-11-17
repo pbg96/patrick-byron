@@ -1,0 +1,167 @@
+/* SMALL MOBILE */
+
+.hero {
+  width: 100vw;
+  height: 90vh;
+  background: var(--clr-primary);
+  display: flex;
+  justify-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-message {
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  bottom: 0;
+  margin: 0rem;
+}
+
+.hero-message > button {
+  position: relative;
+  top: 16px;
+}
+
+.hero-img {
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  position: absolute;
+  object-fit: cover;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+/* MOBILE */
+
+@media only screen and (max-height: 550px) {
+  .hero-img {
+    display: none;
+  }
+}
+
+/* IPHONE X MOBILE */
+
+@media only screen and (min-width: 375px) {
+  /* Hero Section */
+
+  .hero-img {
+    width: 100%;
+    height: 65%;
+    margin: 0;
+    position: absolute;
+    object-fit: cover;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .card {
+    height: 200px;
+  }
+}
+
+/* HALF SCREEN TABLET */
+@media only screen and (min-width: 411px) /* and (min-height: 411px) */ {
+  .hero-img {
+    width: 50%;
+    height: 55%;
+    left: 25%;
+    margin: 0;
+    position: absolute;
+    object-fit: cover;
+  }
+}
+
+/* VERTICAL TABLET  */
+@media only screen and (min-width: 375px) and (min-height: 1024px) {
+  .hero {
+    width: 100vw;
+    height: 512px;
+    background: var(--clr-primary);
+    position: relative;
+  }
+
+  .hero-message {
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    right: 0;
+    bottom: 0;
+    margin: 0rem;
+  }
+
+  .hero-img {
+    width: 120%;
+    height: 120%;
+    margin: 0;
+    position: absolute;
+    object-fit: cover;
+    left: 300px;
+    bottom: 0;
+  }
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    width: 100vw;
+    height: 512px;
+    background: var(--clr-primary);
+    position: relative;
+  }
+
+  .hero-message {
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    right: 0;
+    bottom: 0;
+    margin: 0rem;
+  }
+
+  .hero-img {
+    width: 120%;
+    height: 120%;
+    margin: 0;
+    position: absolute;
+    object-fit: cover;
+    left: 300px;
+    bottom: 0;
+  }
+}
+
+/* LAPTOP SCREEN */
+@media only screen and (min-width: 1000px) {
+  .hero-img {
+    left: 450px;
+  }
+}
+
+/* LAPTOP SCREEN */
+@media only screen and (min-width: 1280px) {
+  .hero-img {
+    left: 450px;
+    object-fit: scale-down;
+  }
+}
+
+/* LAPTOP SCREEN */
+@media only screen and (min-width: 1000px) {
+  .hero-message {
+    padding: 0 6rem 6rem 6rem;
+  }
+}

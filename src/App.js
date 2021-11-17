@@ -1,8 +1,8 @@
-import Header from './components/header'
-import Hero from './components/hero'
-import Work from './components/work'
-import Contact from './components/contact'
-import Footer from './components/footer'
+import Header from './components/Header'
+import Hero from './components/Hero'
+import Work from './components/Work'
+import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
   return (

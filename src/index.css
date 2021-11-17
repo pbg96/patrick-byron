@@ -25,11 +25,6 @@ VARIABLES
   font-size: 16px;
 }
 
-/*
-===============
-GLOBAL STYLES
-===============
-*/
 *,
 ::after,
 ::before {
@@ -38,6 +33,11 @@ GLOBAL STYLES
   box-sizing: border-box;
 }
 
+/*
+===============
+GLOBAL STYLES
+===============
+*/
 body {
   position: relative;
   overflow-x: hidden;
@@ -193,32 +193,7 @@ h6 {
   border-radius: 4px;
 }
 
-/* FORM STYLES */
-.input-style {
-  width: 260px;
-  height: 40px;
-  background: var(--clr-primary-light);
-  border: 1px solid #212121;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-.textarea-style {
-  width: 260px;
-  height: 154px;
-  background: var(--clr-primary-light);
-  border: 1px solid #212121;
-  box-sizing: border-box;
-  border-radius: 4px;
-}
-
-/*
-===============
-SMALL MOBILE
-280PX 
-===============
-*/
-/* Header, Logo, and Button */
+/* SMALL MOBILE */
 .head {
   width: 100vw;
   height: 64px;
@@ -320,7 +295,40 @@ SMALL MOBILE
   transition-delay: 500ms;
 }
 
-/* Hero Section */
+/* VERTICAL TABLET */
+@media only screen and (min-width: 375px) and (min-height: 1024px) {
+  .head {
+    padding: 2rem 2rem;
+  }
+
+  .navlist {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+/* TABLET */
+@media only screen and (min-width: 768px) {
+  .head {
+    padding: 2rem 2rem;
+  }
+
+  .navlist {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+/* TABLET */
+@media only screen and (min-width: 768px) {
+  .head {
+    padding: 2rem 2rem;
+  }
+
+  .navlist {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+/* SMALL MOBILE */
 .hero {
   width: 100vw;
   height: 90vh;
@@ -359,7 +367,123 @@ SMALL MOBILE
   overflow: hidden;
 }
 
-/* Work Section */
+/* MOBILE */
+@media only screen and (max-height: 550px) {
+  .hero-img {
+    display: none;
+  }
+}
+/* IPHONE X MOBILE */
+@media only screen and (min-width: 375px) {
+  /* Hero Section */
+  .hero-img {
+    width: 100%;
+    height: 65%;
+    margin: 0;
+    position: absolute;
+    object-fit: cover;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .card {
+    height: 200px;
+  }
+}
+/* HALF SCREEN TABLET */
+@media only screen and (min-width: 411px) {
+  .hero-img {
+    width: 50%;
+    height: 55%;
+    left: 25%;
+    margin: 0;
+    position: absolute;
+    object-fit: cover;
+  }
+}
+/* VERTICAL TABLET  */
+@media only screen and (min-width: 375px) and (min-height: 1024px) {
+  .hero {
+    width: 100vw;
+    height: 512px;
+    background: var(--clr-primary);
+    position: relative;
+  }
+
+  .hero-message {
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    right: 0;
+    bottom: 0;
+    margin: 0rem;
+  }
+
+  .hero-img {
+    width: 120%;
+    height: 120%;
+    margin: 0;
+    position: absolute;
+    object-fit: cover;
+    left: 300px;
+    bottom: 0;
+  }
+}
+/* TABLET */
+@media only screen and (min-width: 768px) {
+  .hero {
+    width: 100vw;
+    height: 512px;
+    background: var(--clr-primary);
+    position: relative;
+  }
+
+  .hero-message {
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    right: 0;
+    bottom: 0;
+    margin: 0rem;
+  }
+
+  .hero-img {
+    width: 120%;
+    height: 120%;
+    margin: 0;
+    position: absolute;
+    object-fit: cover;
+    left: 300px;
+    bottom: 0;
+  }
+}
+/* LAPTOP SCREEN */
+@media only screen and (min-width: 1000px) {
+  .hero-img {
+    left: 450px;
+  }
+}
+/* LAPTOP SCREEN */
+@media only screen and (min-width: 1280px) {
+  .hero-img {
+    left: 450px;
+    object-fit: scale-down;
+  }
+}
+/* LAPTOP SCREEN */
+@media only screen and (min-width: 1000px) {
+  .hero-message {
+    padding: 0 6rem 6rem 6rem;
+  }
+}
+/* SMALL MOBILE */
 .works {
   width: 100%;
   /* height: 150vh; */
@@ -404,8 +528,7 @@ SMALL MOBILE
   width: 100%;
   align-items: center;
   font-size: 2rem;
-  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
-    rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
+  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
   height: 150px;
   border-radius: 0px;
   transition: all 500ms;
@@ -422,7 +545,32 @@ SMALL MOBILE
   color: var(--clr-primary);
 }
 
-/* Contact Section */
+/* VERTICAL TABLET */
+@media only screen and (min-width: 375px) and (min-height: 1024px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 4rem;
+  }
+}
+/* TABLET */
+@media only screen and (min-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin: 4rem;
+  }
+}
+/* LAPTOP SCREEN */
+@media only screen and (min-width: 1000px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    margin: 4rem;
+  }
+
+  .card {
+    height: 250px;
+  }
+}
+/* SMALL MOBILE */
 .contact {
   width: 100%;
   background-color: var(--clr-primary);
@@ -468,7 +616,26 @@ SMALL MOBILE
   margin-right: auto;
 }
 
-/* Footer */
+/* FORM STYLES */
+.input-style {
+  width: 260px;
+  height: 40px;
+  background: var(--clr-primary-light);
+  border: 1px solid #212121;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.textarea-style {
+  width: 260px;
+  height: 154px;
+  background: var(--clr-primary-light);
+  border: 1px solid #212121;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+/* SMALL MOBILE */
 .footer-one {
   width: 100%;
   background-color: var(--clr-secondary);
@@ -531,6 +698,12 @@ SMALL MOBILE
     text-align: center;
     margin: 0.5rem;
   } */
+/* TABLET */
+@media only screen and (min-width: 768px) {
+  .footer-one {
+    padding: 1rem 4rem;
+  }
+}
 /* Privacy Policy */
 .privacy-policy {
   margin: 1rem 1rem;
@@ -542,299 +715,10 @@ SMALL MOBILE
   list-style-type: disc;
 }
 
-/*
-===============
-MOBILE
-h 300PX 
-===============
-*/
-@media only screen and (max-height: 550px) {
-  .hero-img {
-    display: none;
-  }
-}
-/*
-===============
-IPHONE X MOBILE
-w 375PX
-h 812PX 
-===============
-*/
-@media only screen and (min-width: 375px) {
-  /* Hero Section */
-  .hero-img {
-    width: 100%;
-    height: 65%;
-    margin: 0;
-    position: absolute;
-    object-fit: cover;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .card {
-    height: 200px;
-  }
-}
-/*
-===============
-HALF SCREEN TABLET
-w 411PX
-h 441PX 
-===============
-*/
-@media only screen and (min-width: 411px) {
-  .hero-img {
-    width: 50%;
-    height: 55%;
-    left: 25%;
-    margin: 0;
-    position: absolute;
-    object-fit: cover;
-  }
-}
-/*
-===============
-VERTICAL TABLET
-w 768PX
-h 1024PX 
-===============
-*/
-@media only screen and (min-width: 375px) and (min-height: 1024px) {
-  /* Header, Logo, and Button */
-  .head {
-    padding: 2rem 2rem;
-  }
-
-  .navlist {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  /* Hero Section */
-  .hero {
-    width: 100vw;
-    height: 512px;
-    background: var(--clr-primary);
-    position: relative;
-  }
-
-  .hero-message {
-    width: 50%;
-    text-align: center;
-    align-items: center;
-    position: absolute;
-    top: 20%;
-    left: 5%;
-    right: 0;
-    bottom: 0;
-    margin: 0rem;
-  }
-
-  .hero-img {
-    width: 120%;
-    height: 120%;
-    margin: 0;
-    position: absolute;
-    object-fit: cover;
-    left: 300px;
-    bottom: 0;
-  }
-
-  /* Work Section */
-  .portfolio-grid {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    margin: 4rem;
-  }
-
-  /* Footer */
-  .footer-one {
-    padding: 1rem 4rem;
-  }
-}
-/*
-  ===============
-  TABLET
-  w 768PX
-  ===============
-  */
-@media only screen and (min-width: 768px) {
-  /* Header, Logo, and Button */
-  .head {
-    padding: 2rem 2rem;
-  }
-
-  .navlist {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  /* Hero Section */
-  .hero {
-    width: 100vw;
-    height: 512px;
-    background: var(--clr-primary);
-    position: relative;
-  }
-
-  .hero-message {
-    width: 50%;
-    text-align: center;
-    align-items: center;
-    position: absolute;
-    top: 20%;
-    left: 5%;
-    right: 0;
-    bottom: 0;
-    margin: 0rem;
-  }
-
-  .hero-img {
-    width: 120%;
-    height: 120%;
-    margin: 0;
-    position: absolute;
-    object-fit: cover;
-    left: 300px;
-    bottom: 0;
-  }
-
-  /* Work Section */
-  .portfolio-grid {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    margin: 4rem;
-  }
-
-  /* Footer */
-  .footer-one {
-    padding: 1rem 4rem;
-  }
-}
-/*
-===============
-TABLET
-w 768PX
-===============
-*/
-@media only screen and (min-width: 768px) {
-  /* Header, Logo, and Button */
-  .head {
-    padding: 2rem 2rem;
-  }
-
-  .navlist {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  /* Hero Section */
-  .hero {
-    width: 100vw;
-    height: 512px;
-    background: var(--clr-primary);
-    position: relative;
-  }
-
-  .hero-message {
-    width: 50%;
-    text-align: center;
-    align-items: center;
-    position: absolute;
-    top: 20%;
-    left: 5%;
-    right: 0;
-    bottom: 0;
-    margin: 0rem;
-  }
-
-  .hero-img {
-    width: 120%;
-    height: 120%;
-    margin: 0;
-    position: absolute;
-    object-fit: cover;
-    left: 300px;
-    bottom: 0;
-  }
-
-  /* Work Section */
-  .portfolio-grid {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    margin: 4rem;
-  }
-
-  /* Footer */
-  .footer-one {
-    padding: 1rem 4rem;
-  }
-}
-/*
-===============
-LAPTOP SCREEN
-w 1000PX
-===============
-*/
-@media only screen and (min-width: 1000px) {
-  /* Header, Logo, and Button */
-  /* Hero Section */
-  .hero-img {
-    left: 450px;
-  }
-
-  /* Work Section */
-  /* Footer */
-}
-/*
-===============
-LAPTOP SCREEN
-w 1280PX
-===============
-*/
-@media only screen and (min-width: 1000px) {
-  /* Header, Logo, and Button */
-  /* Hero Section */
-  .hero-img {
-    left: 450px;
-    object-fit: scale-down;
-  }
-
-  /* Work Section */
-  .portfolio-grid {
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    margin: 4rem;
-  }
-
-  .card {
-    height: 250px;
-  }
-
-  /* Footer */
-}
-/*
-===============
-LAPTOP SCREEN
-w 1430PX
-===============
-*/
-@media only screen and (min-width: 1000px) {
-  /* Header, Logo, and Button */
-  /* Hero Section */
-  .hero-message {
-    padding: 0 6rem 6rem 6rem;
-  }
-
-  /* Work Section */
-  .portfolio-grid {
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    margin: 4rem;
-  }
-
-  .card {
-    height: 250px;
-  }
-
-  /* Footer */
-}
+/* ABSTRACTS */
+/* BASE */
+/* COMPONENTS */
+/* LAYOUT */
+/* PAGES */
 
 /*# sourceMappingURL=index.css.map */

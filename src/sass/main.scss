@@ -1,0 +1,26 @@
+/* ABSTRACTS */
+@forward "./abstracts/variables";
+
+/* BASE */
+@forward "./base/reset";
+@forward "./base/globals";
+@forward "./base/links";
+@forward "./base/typography";
+
+/* COMPONENTS */
+@forward "./components/buttons";
+
+/* LAYOUT */
+@forward "./layout/header";
+@forward "./layout/hero";
+@forward "./layout/works";
+@forward "./layout/contact";
+@forward "./layout/forms";
+@forward "./layout/grid";
+@forward "./layout/footer";
+
+/* PAGES */
+@forward "./pages/home";
+@forward "./pages/about";
+@forward "./pages/contact";
+@forward "./pages/privacypolicy";

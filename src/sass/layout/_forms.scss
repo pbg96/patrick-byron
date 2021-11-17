@@ -1,0 +1,19 @@
+/* FORM STYLES */
+
+.input-style {
+  width: 260px;
+  height: 40px;
+  background: var(--clr-primary-light);
+  border: 1px solid #212121;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.textarea-style {
+  width: 260px;
+  height: 154px;
+  background: var(--clr-primary-light);
+  border: 1px solid #212121;
+  box-sizing: border-box;
+  border-radius: 4px;
+}

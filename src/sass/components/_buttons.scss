@@ -1,0 +1,39 @@
+/* BUTTON STYLES */
+
+.btn-default {
+  width: 200px;
+  height: 40px;
+  background: var(--clr-secondary);
+  color: var(--clr-primary);
+  border-style: none;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-default:hover {
+  width: 200px;
+  height: 40px;
+  background: var(--clr-secondary-light);
+  color: var(--clr-primary);
+  border-style: none;
+  border-radius: 4px;
+}
+
+.btn-default:active {
+  width: 200px;
+  height: 40px;
+  background: var(--clr-secondary-dark);
+  color: var(--clr-primary);
+  border-style: none;
+  border-radius: 4px;
+}
+
+.btn-default:focus-visible {
+  width: 200px;
+  height: 40px;
+  background: var(--clr-secondary-light);
+  color: var(--clr-primary);
+  border-style: dotted;
+  border-color: var(--clr-primary);
+  border-radius: 4px;
+}

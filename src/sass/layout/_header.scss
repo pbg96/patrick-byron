@@ -1,0 +1,138 @@
+/* SMALL MOBILE */
+
+.head {
+  width: 100vw;
+  height: 64px;
+  top: 0;
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  position: sticky;
+  overflow: hidden;
+  z-index: 10;
+  background-color: var(--clr-primary-light);
+  transition: top 0.3s ease;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.burger-icon {
+  width: 2rem;
+  background-color: transparent;
+  border-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.fa-bars {
+  font-size: 1.5rem;
+}
+
+.navlist {
+  display: none;
+  cursor: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-primary-light);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+}
+
+.navlist-expanded {
+  opacity: 1;
+  z-index: 3;
+  cursor: auto;
+}
+
+.navlist > a {
+  padding-bottom: 1rem;
+  opacity: 0;
+  display: inline-block;
+  position: relative;
+  color: var(--clr-secondary-dark);
+}
+
+.navlist > a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 20%;
+  left: 0;
+  background-color: var(--clr-secondary-dark);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navlist > a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  cursor: pointer;
+}
+
+.navlist-expanded > a {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.navlist-expanded > a:nth-child(1) {
+  transition-delay: 300ms;
+}
+
+.navlist-expanded > a:nth-child(2) {
+  transition-delay: 400ms;
+}
+
+.navlist-expanded > a:nth-child(3) {
+  transition-delay: 500ms;
+}
+
+/* VERTICAL TABLET */
+@media only screen and (min-width: 375px) and (min-height: 1024px) {
+  .head {
+    padding: 2rem 2rem;
+  }
+
+  .navlist {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px) {
+  .head {
+    padding: 2rem 2rem;
+  }
+
+  .navlist {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px) {
+  .head {
+    padding: 2rem 2rem;
+  }
+
+  .navlist {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

@@ -1,5 +1,5 @@
-import Contact from './Contact'
-import Footer from './Footer'
+import Contact from './contact'
+import Footer from './footer'
 
 function ContactPage() {
   return (

@@ -1,4 +1,4 @@
-import Contactform from './ContactForm'
+import Contactform from './contactform'
 
 function Contact() {
     return (

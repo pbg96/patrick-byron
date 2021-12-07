@@ -1,5 +1,5 @@
-import Work from './Work'
-import Footer from './Footer'
+import Work from './work'
+import Footer from './footer'
 
 function WorksList() {
   return (

@@ -1,4 +1,4 @@
-import Workcard from './WorkCard'
+import Workcard from './workcard'
 import Workinfo from '../data/work.json'
 
 function Work() {

@@ -1,8 +1,8 @@
-import Header from './Header'
-import Hero from './Hero'
-import Work from './Work'
-import Contact from './Contact'
-import Footer from './Footer'
+import Header from './header'
+import Hero from './hero'
+import Work from './work'
+import Contact from './contact'
+import Footer from './footer'
 
 function Home() {
   return (

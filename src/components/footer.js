@@ -1,4 +1,4 @@
-import Footerlinks from './FooterLinks'
+import Footerlinks from './footerlinks'
 import SocialLinks from '../data/socialmedia.json'
 import OtherLinks from '../data/otherlinks.json'
 

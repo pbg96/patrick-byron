@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import Home from './components/Home'
 import { 
   BrowserRouter as Router,
@@ -7,10 +8,35 @@ import {
 import About from'./components/About';
 import WorksList from './components/WorksList';
 import ContactPage from './components/ContactPage';
-import Header from './components/Header';
+import Header from './components/header';
+import { css } from "@emotion/react";
+import { BarLoader } from 'react-spinners';
+
+const override = css`
+  display: block;
+  margin: 50% auto;
+  border-color: black;
+`;
 
 function App() {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 3000)
+  }, [])
+
   return (
+    <div>
+      {
+        loading ?
+        <div className="loader">
+        <BarLoader color={"black"} loading={loading} css={override} height={50} width={100} />
+        </div>
+      
+        :
     <Router>
     <div>  
       <Header />
@@ -22,6 +48,8 @@ function App() {
     </Switch>
     </div>
     </Router>
+        }
+    </div>
   );
 }
 

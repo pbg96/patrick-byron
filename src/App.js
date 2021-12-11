@@ -33,7 +33,7 @@ function App() {
       {
         loading ?
         <div className="loader">
-        <BarLoader color={"black"} loading={loading} css={override} height={50} width={100} />
+        <BarLoader color={"black"} loading={loading} css={override} height={5} width={100} />
         </div>
       
         :

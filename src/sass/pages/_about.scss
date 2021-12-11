@@ -1,0 +1,59 @@
+
+/* SMALL MOBILE */
+
+.about-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.about-designer {
+    padding: 1rem;
+}
+
+.about-designer > .body-2 {
+    padding-bottom: 3rem;
+    line-height: 4;
+}
+
+.capabilities {
+    padding: 1rem;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.capabilities > .body-2 {
+    padding-bottom: 1rem;
+    line-height: 2;
+}
+
+.toolbox {
+    padding: 1rem;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.toolbox > .body-2 {
+    padding-bottom: 1rem;
+    line-height: 2;
+}
+
+/* TABLET */ 
+
+@media only screen and (min-width: 768px) {
+    .about-designer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about-header {
+        padding: 2rem;
+        width: 50%;
+    }
+
+    .about-body {
+        padding: 2rem;
+        width: 50%;
+    }
+}

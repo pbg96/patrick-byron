@@ -1,4 +1,3 @@
-
 /* SMALL MOBILE */
 
 .about-page {
@@ -9,27 +8,45 @@
 }
 
 .about-designer {
-    padding: 1rem;
+    padding: 3rem 1rem 1rem 1rem;
 }
 
-.about-designer > .body-2 {
-    padding-bottom: 3rem;
-    line-height: 4;
+.about-header {
+    padding: 0 0 2.5rem 0;
 }
 
-.capabilities {
-    padding: 1rem;
-    background-color: black;
-    color: whitesmoke;
-}
-
-.capabilities > .body-2 {
-    padding-bottom: 1rem;
+.about-body > .body-2 {
+    padding-bottom: 2.5rem;
     line-height: 2;
 }
 
+.capabilities {
+    padding: 3rem 1rem 1rem 1rem;
+    background-color: rgb(34, 34, 34);
+    color: whitesmoke;
+}
+
+.carousel {
+    height: 20rem;
+    position: relative;
+}
+
+.carousel > .carousel-list {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    line-height: 2;
+}
+
+.carousel .slide{
+    text-align: left;
+}
+
 .toolbox {
-    padding: 1rem;
+    padding: 3rem 1rem 1rem 1rem;;
     background-color: whitesmoke;
     color: black;
 }
@@ -42,11 +59,6 @@
 /* TABLET */ 
 
 @media only screen and (min-width: 768px) {
-    .about-designer {
-        display: flex;
-        flex-direction: row;
-    }
-
     .about-header {
         padding: 2rem;
         width: 50%;
@@ -55,5 +67,23 @@
     .about-body {
         padding: 2rem;
         width: 50%;
+    }
+    
+    .about-designer {
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .capabilities {
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .toolbox {
+        padding: 2rem;
+        display: flex;
+        flex-direction: row;
     }
 }

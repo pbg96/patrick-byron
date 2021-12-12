@@ -1,6 +1,9 @@
+import { Carousel } from 'react-responsive-carousel'
+import "react-responsive-carousel/lib/styles/carousel.min.css"
 import Footer from './footer'
 
 function About() {
+
   return (
     <div classname="about-page">
       <section className="about-designer">
@@ -17,13 +20,46 @@ function About() {
       </div>
       </section>
       <section className="capabilities">
+      <div className="about-header">
+      <p className="overline-text">Capabilities</p>
       <h3 className>What can I do?</h3>
-      <p className="body-2">I could live, I could love, I could reach the heavens above.</p>
+      </div>
+      <div className="about-body">
+        <Carousel className="carousel" autoPlay showStatus={false} infiniteLoop={true} swipeable={true}>
+          <div className="carousel-list">
+            <p className='body-1'>Brand & Marketing Strategy</p>
+            <ul className='body-2'>
+              <li>Brand Strategy & Naming</li>
+              <li>Brand Strategy</li>
+              <li>Brand Strategy</li>
+            </ul>
+          </div>
+          <div className="carousel-list">
+            <p className='body-1'>Brand & Marketing Strategy</p>
+            <ul className='body-2'>
+              <li>Brand Strategy & Naming</li>
+              <li>Brand Strategy</li>
+              <li>Brand Strategy</li>
+            </ul>
+          </div>
+   
+        </Carousel>
+      </div>
       </section>
       <section className="toolbox">
+      <div className="about-header">
       <p className="overline-text">Tools of the Trade</p>
       <h3 className>What's in the toolbox?</h3>
+      </div>
+      <div className="about-body">
       <p className="body-2">I could live, I could love, I could reach the heavens above.</p>
+      <ul className="body-2">
+        <li>Adobe Creative Cloud</li>
+        <li>Figma</li>
+        <li>Graphic Tablet</li>
+        <li>Visual Studio Code</li>
+      </ul>
+      </div>
       </section>
 
       <Footer />

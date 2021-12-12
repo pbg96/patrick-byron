@@ -21,14 +21,14 @@ function Header() {
       <div>
           <header className="head">
         <div className="logo button-text">
-            <p><Link to="/patrick-byron" >Patrick Byron Gattoc</Link></p>
+            <p><Link to="/patrick-byron" onClick={handleToggle}>Patrick Byron Gattoc</Link></p>
         </div>
         <button className="burger-icon" onClick={handleToggle} type="button">
             <i className="fas fa-bars"></i>
         </button>
     </header>
     <div>
-    <nav className={isActive ? "navlist navlist-expanded" : "navlist"}>
+    <nav className={!isActive ? "navlist navlist-expanded" : "navlist"}>
         <a className="menu-item navlist-item"><Link to="/patrick-byron/about" onClick={handleToggle}><h3>About</h3></Link></a>
         <a className="menu-item navlist-item"><Link to="/patrick-byron/works" onClick={handleToggle}><h3>Works</h3></Link></a>
         <a className="menu-item navlist-item"><Link to="/patrick-byron/contacts" onClick={handleToggle}><h3>Contact</h3></Link></a>

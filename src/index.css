@@ -748,6 +748,10 @@ h6 {
   line-height: 2;
 }
 
+.carousel-list p li {
+  padding: 0.5rem;
+}
+
 .carousel .slide {
   text-align: left;
 }

@@ -5,7 +5,6 @@ function WorksList() {
   return (
     <div>
       <Work />
-      <Footer />
     </div>
   );
 }

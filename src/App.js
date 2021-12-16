@@ -9,6 +9,8 @@ import About from'./components/About';
 import WorksList from './components/WorksList';
 import ContactPage from './components/ContactPage';
 import Header from './components/header';
+import Footer from './components/footer';
+import PrivacyPolicy from './components/PrivacyPolicy';
 import { css } from "@emotion/react";
 import { BarLoader } from 'react-spinners';
 
@@ -45,7 +47,9 @@ function App() {
       <Route path="/patrick-byron/about" component={About}/>
       <Route path="/patrick-byron/works" component={WorksList}/>
       <Route path="/patrick-byron/contacts" component={ContactPage}/>
+      <Route path="/patrick-byron/privacy-policy" component={PrivacyPolicy}/>
     </Switch>
+    <Footer />
     </div>
     </Router>
         }

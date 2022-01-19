@@ -1,5 +1,5 @@
 import Workcard from './workcard'
-import Workinfo from '../data/work.json'
+import { Data } from '../data/work'
 
 function Work() {
     return (
@@ -9,8 +9,8 @@ function Work() {
         <h6>Here's a curation of some of my works.</h6>
         </div>
         <div className="portfolio-grid">
-        {Workinfo.map((info,index) => {
-          return <Workcard id={info.id} image={info.image} alt={info.alt} title={info.title} category={info.category} />
+        {Data.map((info,index) => {
+          return <Workcard id={info.id} image={info.image} alt={info.alt} title={info.title} category={info.category} link={info.link}/>
          })}
         </div>
     </section>

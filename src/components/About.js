@@ -29,20 +29,28 @@ function About() {
           <div className="carousel-list">
             <p className='body-1'>Brand & Marketing Strategy</p>
             <ul className='body-2'>
-              <li>Brand Strategy & Naming</li>
-              <li>Brand Strategy</li>
-              <li>Brand Strategy</li>
+              <li>Brand and Marketing Strategy</li>
+              <li>Business Naming</li>
+              <li>Creative Strategy</li>
             </ul>
           </div>
           <div className="carousel-list">
-            <p className='body-1'>Brand & Marketing Strategy</p>
+            <p className='body-1'>Graphic & Identity Design</p>
             <ul className='body-2'>
-              <li>Brand Strategy & Naming</li>
-              <li>Brand Strategy</li>
-              <li>Brand Strategy</li>
+              <li>Logo and Brand Identity Design</li>
+              <li>Print, Publishing, Advertising, and Packaging Design</li>
+              <li>UI/UX and Responsive Web Design</li>
+              <li>Illustrations</li>
+              <li>Animation and Motion Graphics</li>
             </ul>
           </div>
-   
+          <div className="carousel-list">
+            <p className='body-1'>Front-End Development</p>
+            <ul className='body-2'>
+              <li>Squarespace/Wordpress/Shopify Development</li>
+              <li>Front-End Web Application Development</li>
+            </ul>
+          </div>
         </Carousel>
       </div>
       </section>

@@ -1,25 +1,32 @@
 {
   "files": {
-    "main.css": "/patrick-byron/static/css/main.07a5e5b7.chunk.css",
-    "main.js": "/patrick-byron/static/js/main.6283c0a7.chunk.js",
-    "main.js.map": "/patrick-byron/static/js/main.6283c0a7.chunk.js.map",
-    "runtime-main.js": "/patrick-byron/static/js/runtime-main.d54488be.js",
-    "runtime-main.js.map": "/patrick-byron/static/js/runtime-main.d54488be.js.map",
+    "main.css": "/patrick-byron/static/css/main.c10cc195.chunk.css",
+    "main.js": "/patrick-byron/static/js/main.975cfd6d.chunk.js",
+    "main.js.map": "/patrick-byron/static/js/main.975cfd6d.chunk.js.map",
+    "runtime-main.js": "/patrick-byron/static/js/runtime-main.100ee50b.js",
+    "runtime-main.js.map": "/patrick-byron/static/js/runtime-main.100ee50b.js.map",
     "static/css/2.ed1298f3.chunk.css": "/patrick-byron/static/css/2.ed1298f3.chunk.css",
-    "static/js/2.9a68ca83.chunk.js": "/patrick-byron/static/js/2.9a68ca83.chunk.js",
-    "static/js/2.9a68ca83.chunk.js.map": "/patrick-byron/static/js/2.9a68ca83.chunk.js.map",
-    "static/js/3.7928f1a4.chunk.js": "/patrick-byron/static/js/3.7928f1a4.chunk.js",
-    "static/js/3.7928f1a4.chunk.js.map": "/patrick-byron/static/js/3.7928f1a4.chunk.js.map",
+    "static/js/2.a269861a.chunk.js": "/patrick-byron/static/js/2.a269861a.chunk.js",
+    "static/js/2.a269861a.chunk.js.map": "/patrick-byron/static/js/2.a269861a.chunk.js.map",
+    "static/js/3.f24ce417.chunk.js": "/patrick-byron/static/js/3.f24ce417.chunk.js",
+    "static/js/3.f24ce417.chunk.js.map": "/patrick-byron/static/js/3.f24ce417.chunk.js.map",
     "index.html": "/patrick-byron/index.html",
     "static/css/2.ed1298f3.chunk.css.map": "/patrick-byron/static/css/2.ed1298f3.chunk.css.map",
-    "static/css/main.07a5e5b7.chunk.css.map": "/patrick-byron/static/css/main.07a5e5b7.chunk.css.map",
-    "static/js/2.9a68ca83.chunk.js.LICENSE.txt": "/patrick-byron/static/js/2.9a68ca83.chunk.js.LICENSE.txt"
+    "static/css/main.c10cc195.chunk.css.map": "/patrick-byron/static/css/main.c10cc195.chunk.css.map",
+    "static/js/2.a269861a.chunk.js.LICENSE.txt": "/patrick-byron/static/js/2.a269861a.chunk.js.LICENSE.txt",
+    "static/media/Case1Cover.e275267c.png": "/patrick-byron/static/media/Case1Cover.e275267c.png",
+    "static/media/Case2Cover.fba33c18.png": "/patrick-byron/static/media/Case2Cover.fba33c18.png",
+    "static/media/Case3Cover.2a03caf0.png": "/patrick-byron/static/media/Case3Cover.2a03caf0.png",
+    "static/media/Headshot1.5b4d3ccf.png": "/patrick-byron/static/media/Headshot1.5b4d3ccf.png",
+    "static/media/case1.13f1c56b.pdf": "/patrick-byron/static/media/case1.13f1c56b.pdf",
+    "static/media/case2.c4a0216b.pdf": "/patrick-byron/static/media/case2.c4a0216b.pdf",
+    "static/media/case3.7a8c3bd5.pdf": "/patrick-byron/static/media/case3.7a8c3bd5.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.d54488be.js",
+    "static/js/runtime-main.100ee50b.js",
     "static/css/2.ed1298f3.chunk.css",
-    "static/js/2.9a68ca83.chunk.js",
-    "static/css/main.07a5e5b7.chunk.css",
-    "static/js/main.6283c0a7.chunk.js"
+    "static/js/2.a269861a.chunk.js",
+    "static/css/main.c10cc195.chunk.css",
+    "static/js/main.975cfd6d.chunk.js"
   ]
 }

@@ -4,6 +4,7 @@ FONTS
 ===============
 */
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://use.typekit.net/kav8dpt.css");
 /*
 ===============
 VARIABLES
@@ -55,42 +56,41 @@ a {
 
 /* TYPOGRAPHY SCALE */
 h1 {
-  font-family: Libre Franklin;
+  font-family: futura-pt;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 96px;
 }
 
 h2 {
-  font-family: Libre Franklin;
-  font-style: normal;
-  font-weight: 100;
+  font-family: futura-pt;
+  font-weight: 400;
   font-size: 72px;
 }
 
 h3 {
-  font-family: Libre Franklin;
+  font-family: futura-pt;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 60px;
 }
 
 h4 {
-  font-family: Libre Franklin;
+  font-family: futura-pt;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 48px;
 }
 
 h5 {
-  font-family: Libre Franklin;
+  font-family: futura-pt;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 32px;
 }
 
 h6 {
-  font-family: Libre Franklin;
+  font-family: "Libre Franklin";
   font-style: normal;
   font-weight: 100;
   font-size: 24px;
@@ -172,6 +172,7 @@ h6 {
   color: var(--clr-primary);
   border-style: none;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .btn-default:active {
@@ -202,8 +203,7 @@ h6 {
   justify-content: space-between;
   padding: 1rem 1rem;
   position: sticky;
-  overflow: hidden;
-  z-index: 10;
+  z-index: 1;
   background-color: var(--clr-primary-light);
   transition: top 0.3s ease;
 }
@@ -251,6 +251,7 @@ h6 {
   opacity: 1;
   z-index: 3;
   cursor: auto;
+  overflow: hidden;
 }
 
 .navlist > a {
@@ -517,7 +518,7 @@ h6 {
 .portfolio-grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   z-index: 2;
   overflow: hidden;
   margin: 1rem 1rem 4rem 1rem;
@@ -531,13 +532,17 @@ h6 {
   align-items: center;
   font-size: 2rem;
   box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
-  height: 150px;
+  height: 250px;
   border-radius: 0px;
   transition: all 500ms;
   overflow: hidden;
   background-color: var(--clr-primary-dark);
   background-position: center;
-  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card > img {
+  height: 100%;
 }
 
 .card-overlay {
@@ -553,12 +558,21 @@ h6 {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     margin: 4rem;
   }
+
+  .card > img {
+    width: 100%;
+  }
 }
 /* TABLET */
 @media only screen and (min-width: 768px) {
   .portfolio-grid {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     margin: 4rem;
+  }
+
+  .card > img {
+    width: 100%;
+    object-fit: cover;
   }
 }
 /* LAPTOP SCREEN */
@@ -569,7 +583,7 @@ h6 {
   }
 
   .card {
-    height: 250px;
+    height: 300px;
   }
 }
 /* SMALL MOBILE */
@@ -716,6 +730,7 @@ h6 {
 
 .about-designer {
   padding: 3rem 1rem 1rem 1rem;
+  background: var(--clr-primary);
 }
 
 .about-header {
@@ -728,7 +743,7 @@ h6 {
 }
 
 .capabilities {
-  padding: 3rem 1rem 1rem 1rem;
+  padding: 3rem 1rem 3.5rem 1rem;
   background-color: #222222;
   color: whitesmoke;
 }
@@ -745,11 +760,15 @@ h6 {
   width: 100%;
   height: 100%;
   text-align: left;
+}
+
+.carousel-list > p {
   line-height: 2;
 }
 
-.carousel-list p li {
-  padding: 0.5rem;
+.carousel-list > ul > li {
+  line-height: 2;
+  padding-left: 2rem;
 }
 
 .carousel .slide {
@@ -758,7 +777,7 @@ h6 {
 
 .toolbox {
   padding: 3rem 1rem 1rem 1rem;
-  background-color: whitesmoke;
+  background: var(--clr-primary);
   color: black;
 }
 
@@ -808,6 +827,59 @@ h6 {
   list-style-type: disc;
 }
 
+/* SMALL MOBILE */
+.case-study {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  background: var(--clr-primary);
+}
+
+.case-study > canvas {
+  width: 100vw;
+}
+
+.case-study-title {
+  padding-bottom: 1.5rem;
+}
+
+.case-study-body {
+  padding-bottom: 2.5rem;
+  line-height: 2;
+  position: relative;
+}
+
+.case-study-body > p {
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+}
+
+.case-study-body > img {
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px) {
+  .case-study {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2.5rem;
+  }
+}
+/* LAPTOP SCREEN */
+@media only screen and (min-width: 1000px) {
+  .case-study {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 2.5rem;
+  }
+}
 /* ABSTRACTS */
 /* BASE */
 /* COMPONENTS */

@@ -31,7 +31,7 @@
 .portfolio-grid {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   z-index: 2;
   overflow: hidden;
   margin: 1rem 1rem 4rem 1rem;
@@ -46,13 +46,17 @@
   font-size: 2rem;
   box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem,
     rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
-  height: 150px;
+  height: 250px;
   border-radius: 0px;
   transition: all 500ms;
   overflow: hidden;
   background-color: var(--clr-primary-dark);
   background-position: center;
-  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card > img {
+  height: 100%;
 }
 
 .card-overlay {
@@ -62,12 +66,18 @@
   color: var(--clr-primary);
 }
 
+
+
 /* VERTICAL TABLET */
 
 @media only screen and (min-width: 375px) and (min-height: 1024px) {
   .portfolio-grid {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     margin: 4rem;
+  }
+
+  .card > img {
+    width: 100%;
   }
 }
 
@@ -77,6 +87,12 @@
   .portfolio-grid {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     margin: 4rem;
+  }
+
+  
+  .card > img {
+    width: 100%;
+    object-fit: cover;
   }
 }
 
@@ -88,6 +104,6 @@
   }
 
   .card {
-    height: 250px;
+    height: 300px;
   }
 }

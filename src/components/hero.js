@@ -1,4 +1,4 @@
-import HeroPic from '../assets/Headshot1.png';
+import HeroPic from '../assets/Headshot2.png';
 
 function Hero() {
     return (

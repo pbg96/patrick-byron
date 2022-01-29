@@ -1,5 +1,3 @@
-import { Carousel } from 'react-responsive-carousel'
-import "react-responsive-carousel/lib/styles/carousel.min.css"
 import Footer from './footer'
 
 function About() {
@@ -25,33 +23,35 @@ function About() {
       <h3 className>What can I do?</h3>
       </div>
       <div className="about-body">
-        <Carousel className="carousel" autoPlay showStatus={false} infiniteLoop={true} swipeable={true}>
           <div className="carousel-list">
-            <p className='body-1'>Brand & Marketing Strategy</p>
+            <p data-aos="fade-left" className='body-1'>Brand & Marketing Strategy</p>
             <ul className='body-2'>
-              <li>Brand and Marketing Strategy</li>
-              <li>Business Naming</li>
-              <li>Creative Strategy</li>
+              <li data-aos="fade-left">Brand Positioning & Differentiation</li>
+              <li data-aos="fade-left">Identifying Core Demographics</li>
+              <li data-aos="fade-left">Customer and Market Segmentation</li>
+              <li data-aos="fade-left">Identifying Brand Attributes</li>
+              <li data-aos="fade-left">Conducting Competitive and Internal Brand Identity Audit</li>
+              <li data-aos="fade-left">Business Intelligence and Sales Analytics</li>
+              <li data-aos="fade-left">Development of Sales & Marketing Activities</li>
             </ul>
           </div>
           <div className="carousel-list">
-            <p className='body-1'>Graphic & Identity Design</p>
+            <p data-aos="fade-left" className='body-1'>Graphic & Identity Design</p>
             <ul className='body-2'>
-              <li>Logo and Brand Identity Design</li>
-              <li>Print, Publishing, Advertising, and Packaging Design</li>
-              <li>UI/UX and Responsive Web Design</li>
-              <li>Illustrations</li>
-              <li>Animation and Motion Graphics</li>
+              <li data-aos="fade-left">Logo and Brand Identity Design</li>
+              <li data-aos="fade-left">Print, Publishing, Advertising, and Packaging Design</li>
+              <li data-aos="fade-left">UI/UX and Responsive Web Design</li>
+              <li data-aos="fade-left">Illustrations</li>
+              <li data-aos="fade-left">Animation and Motion Graphics</li>
             </ul>
           </div>
           <div className="carousel-list">
-            <p className='body-1'>Front-End Development</p>
+            <p data-aos="fade-left" className='body-1'>Front-End Development</p>
             <ul className='body-2'>
-              <li>Squarespace/Wordpress/Shopify Development</li>
-              <li>Front-End Web Application Development</li>
+              <li data-aos="fade-left">Squarespace/Wordpress/Shopify Development</li>
+              <li data-aos="fade-left">Front-End Web Application Development</li>
             </ul>
           </div>
-        </Carousel>
       </div>
       </section>
       <section className="toolbox">

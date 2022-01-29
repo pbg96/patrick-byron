@@ -13,9 +13,13 @@ import Footer from './components/footer';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import { css } from "@emotion/react";
 import { BarLoader } from 'react-spinners';
+import CaseStudyPritoTito from './components/CaseStudyPritoTito';
+import CaseStudyStocksAndMore from './components/CaseStudyStocksAndMore';
+import CaseStudyPlantphilia from './components/CaseStudyPlantphilia';
 import CaseStudyOne from './components/CaseStudyOne';
 import CaseStudyTwo from './components/CaseStudyTwo';
 import CaseStudyThree from './components/CaseStudyThree';
+
 
 const override = css`
   display: block;
@@ -51,6 +55,9 @@ function App() {
       <Route path="/patrick-byron/works" component={WorksList}/>
       <Route path="/patrick-byron/contacts" component={ContactPage}/>
       <Route path="/patrick-byron/privacy-policy" component={PrivacyPolicy}/>
+      <Route path="/patrick-byron/prito-tito" component={CaseStudyPritoTito}/>
+      <Route path="/patrick-byron/stocks-and-more" component={CaseStudyStocksAndMore}/>
+      <Route path="/patrick-byron/plantphilia" component={CaseStudyPlantphilia}/>
       <Route path="/patrick-byron/case-study-1" component={CaseStudyOne}/>
       <Route path="/patrick-byron/case-study-2" component={CaseStudyTwo}/>
       <Route path="/patrick-byron/case-study-3" component={CaseStudyThree}/>

@@ -15,8 +15,8 @@ function Header() {
 
     const handleToggle = () => {
       setActive(!isActive);
-
     };
+
     return (
       <div>
           <header className="head">

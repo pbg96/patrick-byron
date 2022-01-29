@@ -29,7 +29,7 @@ function CaseStudyThree() {
 
   return (
       <center>
-        <div>
+        <div className='case-study'>
           <Document file={caseThree} onLoadSuccess={onDocumentLoadSuccess}>
             {Array.from(
               new Array(numPages),

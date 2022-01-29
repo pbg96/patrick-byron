@@ -8,19 +8,32 @@ import {
     Route,
     Link
   } from 'react-router-dom';
+import CaseStudyPritoTito from './CaseStudyPritoTito';
+import CaseStudyStocksAndMore from './CaseStudyStocksAndMore';
+import CaseStudyPlantphilia from './CaseStudyPlantphilia'
 
 function Workcard(props) {
-    return (        
+    return (      
+      <Link to={props.link}>  
             <div className="card" data-aos="fade-in">
-               <Link to={props.link}>
                    <img src={props.image} alt={props.alt} className=""/>
-                </Link>
+               
                 <div className="card-overlay">
                     <p className="overline-text">{props.category}</p>
                     <p className="body-1">{props.title}</p>
                 </div>
 
+
             <Switch>
+            <Route path="/patrick-byron/prito-tito">
+            <CaseStudyPritoTito />
+            </Route>
+            <Route path="/patrick-byron/stocks-and-more">
+            <CaseStudyStocksAndMore />
+            </Route>
+            <Route path="/patrick-byron/plantphilia">
+            <CaseStudyPlantphilia />
+            </Route>
             <Route path="/patrick-byron/case-study-1">
             <CaseStudyOne />
             </Route>
@@ -32,6 +45,7 @@ function Workcard(props) {
             </Route>
             </Switch>
             </div>
+            </Link>
     );
   }
 

@@ -1,6 +1,6 @@
 
 import React, {useState} from 'react'
-import { Document, Page, pdfjs } from "react-pdf";
+import { Document, Page, pdfjs, } from "react-pdf";
 import caseOne from '../assets/case1.pdf'
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
@@ -28,9 +28,15 @@ function CaseStudyOne() {
   }
 
   return (
-      <center>
-        <div>
-          <Document file={caseOne} onLoadSuccess={onDocumentLoadSuccess}>
+        <div className='case-study'>
+          <div className='case-study-title'>
+          <p className='overline-text'>Category</p>
+          <h3>Case Study Title</h3>
+          </div>
+          <div className='case-study-body'>
+          <p className="body-2">Hello! I am Patrick. I am a graphic and brand identity designer who also has a passion for illustration, type design, print and packaging design, web design, UX design and motion graphics and has corporate experience in marketing strategy, brand and trade marketing.</p>
+          </div>
+          <Document file={caseOne} onLoadSuccess={onDocumentLoadSuccess} className="body-1">
             {Array.from(
               new Array(numPages),
               (el,index) => (
@@ -42,7 +48,6 @@ function CaseStudyOne() {
             )}
           </Document>
         </div>
-      </center>
   );
 }
 

@@ -51,16 +51,16 @@ function App() {
       <Header />
       <Switch>
       <Route path="/" exact component={Home}/>
-      <Route path="/about" component={About}/>
-      <Route path="/works" component={WorksList}/>
-      <Route path="/contacts" component={ContactPage}/>
-      <Route path="/privacy-policy" component={PrivacyPolicy}/>
-      <Route path="/works/prito-tito" component={CaseStudyPritoTito}/>
-      <Route path="/works/stocks-and-more" component={CaseStudyStocksAndMore}/>
-      <Route path="/works/plantphilia" component={CaseStudyPlantphilia}/>
-      <Route path="/works/case-study-1" component={CaseStudyOne}/>
-      <Route path="/works/case-study-2" component={CaseStudyTwo}/>
-      <Route path="/works/case-study-3" component={CaseStudyThree}/>
+      <Route path="/about" exact component={About}/>
+      <Route path="/works" exact component={WorksList}/>
+      <Route path="/contacts" exact component={ContactPage}/> 
+      <Route path="/privacy-policy" exact component={PrivacyPolicy}/>
+      <Route path="/prito-tito" exact component={CaseStudyPritoTito}/>
+      <Route path="/stocks-and-more" exact component={CaseStudyStocksAndMore}/>
+      <Route path="/plantphilia" exact component={CaseStudyPlantphilia}/>
+      <Route path="/case-study-1" exact component={CaseStudyOne}/>
+      <Route path="/case-study-2" exact component={CaseStudyTwo}/>
+      <Route path="/case-study-3" exact component={CaseStudyThree}/>
     </Switch>
     <Footer />
     </div>

@@ -34,18 +34,6 @@ function Header() {
         <a className="menu-item navlist-item"><Link to="/contacts" onClick={handleToggle}><h3>Contact</h3></Link></a>
     </nav>
     </div>
-    
-    <Switch>
-      <Route path="/about">
-      <About />
-      </Route>
-      <Route path="/works">
-      <WorksList />
-      </Route>
-      <Route path="/contacts">
-      <ContactPage/>
-      </Route>
-    </Switch>
       </div>
     );
   }

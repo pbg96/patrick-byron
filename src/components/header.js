@@ -29,9 +29,9 @@ function Header() {
     </header>
     <div>
     <nav className={!isActive ? "navlist navlist-expanded" : "navlist"}>
-        <a className="menu-item navlist-item"><Link to="/patrick-byron/about" onClick={handleToggle}><h3>About</h3></Link></a>
-        <a className="menu-item navlist-item"><Link to="/patrick-byron/works" onClick={handleToggle}><h3>Works</h3></Link></a>
-        <a className="menu-item navlist-item"><Link to="/patrick-byron/contacts" onClick={handleToggle}><h3>Contact</h3></Link></a>
+        <a className="menu-item navlist-item"><Link to="/about" onClick={handleToggle}><h3>About</h3></Link></a>
+        <a className="menu-item navlist-item"><Link to="/works" onClick={handleToggle}><h3>Works</h3></Link></a>
+        <a className="menu-item navlist-item"><Link to="/contacts" onClick={handleToggle}><h3>Contact</h3></Link></a>
     </nav>
     </div>
     

@@ -50,17 +50,17 @@ function App() {
     <div>  
       <Header />
       <Switch>
-      <Route path="/patrick-byron" exact component={Home}/>
-      <Route path="/patrick-byron/about" component={About}/>
-      <Route path="/patrick-byron/works" component={WorksList}/>
-      <Route path="/patrick-byron/contacts" component={ContactPage}/>
-      <Route path="/patrick-byron/privacy-policy" component={PrivacyPolicy}/>
-      <Route path="/patrick-byron/prito-tito" component={CaseStudyPritoTito}/>
-      <Route path="/patrick-byron/stocks-and-more" component={CaseStudyStocksAndMore}/>
-      <Route path="/patrick-byron/plantphilia" component={CaseStudyPlantphilia}/>
-      <Route path="/patrick-byron/case-study-1" component={CaseStudyOne}/>
-      <Route path="/patrick-byron/case-study-2" component={CaseStudyTwo}/>
-      <Route path="/patrick-byron/case-study-3" component={CaseStudyThree}/>
+      <Route path="/" exact component={Home}/>
+      <Route path="/about" component={About}/>
+      <Route path="/works" component={WorksList}/>
+      <Route path="/contacts" component={ContactPage}/>
+      <Route path="/privacy-policy" component={PrivacyPolicy}/>
+      <Route path="/works/prito-tito" component={CaseStudyPritoTito}/>
+      <Route path="/works/stocks-and-more" component={CaseStudyStocksAndMore}/>
+      <Route path="/works/plantphilia" component={CaseStudyPlantphilia}/>
+      <Route path="/works/case-study-1" component={CaseStudyOne}/>
+      <Route path="/works/case-study-2" component={CaseStudyTwo}/>
+      <Route path="/works/case-study-3" component={CaseStudyThree}/>
     </Switch>
     <Footer />
     </div>

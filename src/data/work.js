@@ -12,7 +12,7 @@ export const Data = [
         "title": "Brand Identity Design For A Fun Cloud Kitchen Brand",  
         "category": "Brand Identity Design, Logo Design",
         "image": pritotito,
-        "link":"/patrick-byron/prito-tito",
+        "link":"/works/prito-tito",
         "alt": "Brand Identity Design For A Fun Cloud Kitchen Brand"
     },
     {
@@ -20,7 +20,7 @@ export const Data = [
         "title": "Brand Identity Design For A Simple E-Commerce Shop",  
         "category": "Brand Identity, Packaging Design",
         "image": stocksmore,
-        "link":"/patrick-byron/stocks-and-more",
+        "link":"/works/stocks-and-more",
         "alt": "Brand Identity Design For A Simple E-Commerce Shop"
     },
     {
@@ -28,7 +28,7 @@ export const Data = [
         "title": "Brand Identity Design For An Instagram Ornaments Shop",  
         "category": "Brand Identity Design, Social Media Design",
         "image": plantphilia,
-        "link":"/patrick-byron/plantphilia",
+        "link":"/works/plantphilia",
         "alt": "Brand Identity Design For An Instagram Ornaments Shop"
     },
     {
@@ -36,7 +36,7 @@ export const Data = [
         "title": "App Design for an Art Gallery",  
         "category": "UX Design",
         "image": coverOne,
-        "link":"/patrick-byron/case-study-1",
+        "link":"/works/case-study-1",
         "alt": "Mock-up for App Design for an Art Gallery"
     },
     {
@@ -44,7 +44,7 @@ export const Data = [
         "title": "Responsive Design for a Design Agency",  
         "category": "UX Design",
         "image": coverTwo,
-        "link":"/patrick-byron/case-study-2",
+        "link":"/works/case-study-2",
         "alt": "Mock-up for App Design for Design Agency"
     },
     {
@@ -52,7 +52,7 @@ export const Data = [
         "title": "Responsive Web App for a Community Pantry",
         "category": "UX Design",
         "image": coverThree,
-        "link":"/patrick-byron/case-study-3",
+        "link":"/works/case-study-3",
         "alt": "Mock-up for Responsive Web Design"
     }
 

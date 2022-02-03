@@ -25,22 +25,22 @@ function Workcard(props) {
 
 
             <Switch>
-            <Route path="/patrick-byron/prito-tito">
+            <Route path="/works/prito-tito">
             <CaseStudyPritoTito />
             </Route>
-            <Route path="/patrick-byron/stocks-and-more">
+            <Route path="/works/stocks-and-more">
             <CaseStudyStocksAndMore />
             </Route>
-            <Route path="/patrick-byron/plantphilia">
+            <Route path="/works/plantphilia">
             <CaseStudyPlantphilia />
             </Route>
-            <Route path="/patrick-byron/case-study-1">
+            <Route path="/works/case-study-1">
             <CaseStudyOne />
             </Route>
-            <Route path="/patrick-byron/case-study-2">
+            <Route path="/works/case-study-2">
             <CaseStudyTwo />
             </Route>
-            <Route path="/patrick-byron/case-study-3">
+            <Route path="/works/case-study-3">
             <CaseStudyOne />
             </Route>
             </Switch>

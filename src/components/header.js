@@ -21,7 +21,7 @@ function Header() {
       <div>
           <header className="head">
         <div className="logo button-text">
-            <p><Link to="/patrick-byron" onClick={handleToggle}>Patrick Byron Gattoc</Link></p>
+            <p><Link to="/" onClick={handleToggle}>Patrick Byron Gattoc</Link></p>
         </div>
         <button className="burger-icon" onClick={handleToggle} type="button">
             <i className="fas fa-bars"></i>

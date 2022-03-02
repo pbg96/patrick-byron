@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react';
-import Home from './components/Home'
+import { useState, useEffect, Suspense, lazy } from 'react';
 import { 
   BrowserRouter as Router,
   Switch,
@@ -20,6 +19,7 @@ import CaseStudyOne from './components/CaseStudyOne';
 import CaseStudyTwo from './components/CaseStudyTwo';
 import CaseStudyThree from './components/CaseStudyThree';
 
+const Home = lazy(() => import('./components/Home'));
 
 const override = css`
   display: block;
@@ -38,14 +38,9 @@ function App() {
   }, [])
 
   return (
-    <div>
-      {
-        loading ?
-        <div className="loader">
-        <BarLoader color={"black"} loading={loading} css={override} height={5} width={100} />
-        </div>
-      
-        :
+    <Suspense fallback={<div className="loader">
+    <BarLoader color={"black"} loading={loading} css={override} height={5} width={100} />
+    </div>}>
     <Router>
     <div>  
       <Header />
@@ -65,8 +60,7 @@ function App() {
     <Footer />
     </div>
     </Router>
-        }
-    </div>
+    </Suspense>
   );
 }
 

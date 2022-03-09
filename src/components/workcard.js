@@ -1,16 +1,16 @@
 import { props } from 'react'
 import WorksList from './WorksList';
-import CaseStudyOne from './CaseStudyOne';
-import CaseStudyTwo from './CaseStudyTwo';
+import CaseStudyOne from './casestudies/CaseStudyOne';
+import CaseStudyTwo from './casestudies/CaseStudyTwo';
 import { 
     BrowserRouter as Router,
     Switch,
     Route,
     Link
   } from 'react-router-dom';
-import CaseStudyPritoTito from './CaseStudyPritoTito';
-import CaseStudyStocksAndMore from './CaseStudyStocksAndMore';
-import CaseStudyPlantphilia from './CaseStudyPlantphilia'
+import CaseStudyPritoTito from './casestudies/CaseStudyPritoTito';
+import CaseStudyStocksAndMore from './casestudies/CaseStudyStocksAndMore';
+import CaseStudyPlantphilia from './casestudies/CaseStudyPlantphilia'
 
 function Workcard(props) {
     return (      

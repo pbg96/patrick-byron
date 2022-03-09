@@ -56,62 +56,62 @@ a {
 
 /* TYPOGRAPHY SCALE */
 h1 {
-  font-family: futura-pt;
+  font-family: futura-pt, "Libre Franklin", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 96px;
 }
 
 h2 {
-  font-family: futura-pt;
+  font-family: futura-pt, "Libre Franklin", sans-serif;
   font-weight: 400;
   font-size: 72px;
 }
 
 h3 {
-  font-family: futura-pt;
+  font-family: futura-pt, "Libre Franklin", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 60px;
 }
 
 h4 {
-  font-family: futura-pt;
+  font-family: futura-pt, "Libre Franklin", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
 }
 
 h5 {
-  font-family: futura-pt;
+  font-family: futura-pt, "Libre Franklin", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
 }
 
 h6 {
-  font-family: "Libre Franklin";
+  font-family: "Libre Franklin", sans-serif;
   font-style: normal;
   font-weight: 100;
   font-size: 24px;
 }
 
 .body-1 {
-  font-family: Libre Franklin;
+  font-family: Libre Franklin, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
 }
 
 .subtitle-text {
-  font-family: IBM Plex Mono;
+  font-family: IBM Plex Mono, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
 }
 
 .button-text {
-  font-family: IBM Plex Mono;
+  font-family: IBM Plex Mono, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -119,21 +119,21 @@ h6 {
 }
 
 .body-2 {
-  font-family: Libre Franklin;
+  font-family: Libre Franklin, sans-serif;
   font-style: normal;
   font-weight: 200;
   font-size: 16px;
 }
 
 .caption-text {
-  font-family: Libre Franklin;
+  font-family: Libre Franklin, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 10px;
 }
 
 .overline-text {
-  font-family: IBM Plex Mono;
+  font-family: IBM Plex Mono, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 10px;
@@ -141,14 +141,14 @@ h6 {
 }
 
 .body-3 {
-  font-family: Libre Franklin;
+  font-family: Libre Franklin, sans-serif;
   font-style: normal;
   font-weight: 200;
   font-size: 12px;
 }
 
 .label-text {
-  font-family: Libre Franklin;
+  font-family: Libre Franklin, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 10px;
@@ -547,9 +547,11 @@ h6 {
 
 .card-overlay {
   position: absolute;
-  bottom: 0.5rem;
-  left: 0.5rem;
+  bottom: 0rem;
   color: var(--clr-primary);
+  background-color: rgba(34, 34, 34, 0.75);
+  width: 100%;
+  padding: 0.5rem;
 }
 
 /* VERTICAL TABLET */

@@ -28,5 +28,11 @@
         "url": "https://www.linkedin.com/in/patrick-byron-gattoc-87410295/",
         "sitename": "LinkedIn",
         "class": "body-2"
+    },
+    {
+        "id": 6,
+        "url": "https://patrickbyron.myportfolio.com",
+        "sitename": "Adobe Portfolio",
+        "class": "body-2"
     }
 ]

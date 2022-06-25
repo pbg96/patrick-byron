@@ -1,4 +1,5 @@
 import Footer from './footer'
+import DownloadCv from './DownloadCv';
 
 function About() {
 
@@ -15,6 +16,7 @@ function About() {
       <p className="body-2">I do freelance brand identity design work at the moment, helping transform and grow companies and organizations in the US, Europe, Middle East, Asia and Australia through appropriate and distinctive and functional logos and brand identity systems.</p>
       <p className="body-2">I also spent 3 years of corporate marketing experience in marketing strategy, brand, trade marketing, executing brand visual identity as I co-develop key visuals for social media, web, UI & UX, out-of-home and retail advertising with partner design firms.</p>
       <p className="body-2">I finished with high honors in my Bachelor of Arts degree at the University of the Philippines Cebu College of Communication, Art & Design where I majored in Mass Communication and did courses in Multimedia, Graphic Design & Animation. I also did some professional certificate courses in Graphic Design, Web Development and Programming, A.I. and UX Design from Google, Parsons The New School, California Institute of the Arts (CalArts), and freeCodeCamp.</p>
+      <DownloadCv />
       </div>
       </section>
       <section className="capabilities">
@@ -60,12 +62,39 @@ function About() {
       <h3 className>What's in the toolbox?</h3>
       </div>
       <div className="about-body">
-      <p className="body-2">I could live, I could love, I could reach the heavens above.</p>
+      <p className="body-1">Design</p>
       <ul className="body-2">
         <li>Adobe Creative Cloud</li>
+        <li>Adobe Photoshop</li>
+        <li>Adobe Illustrator</li>
+        <li>Adobe InDesign</li>
+        <li>Adobe Experience Design</li>
         <li>Figma</li>
+        <li>Canva</li>
+        <li>Adobe Spark</li>
+        <li>Blender</li>
         <li>Graphic Tablet</li>
-        <li>Visual Studio Code</li>
+      </ul>
+      <p className="body-1">Development</p>
+      <ul className="body-2">
+        <li>HTML/CSS</li>
+        <li>Javascript/Typescript</li>
+        <li>C/C++</li>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>React</li>
+        <li>Flask</li>
+        <li>Sass</li>
+        <li>Bootstrap</li>
+        <li>Node.js</li>
+      </ul>
+      <p className="body-1">Project Management</p>
+      <ul className="body-2">
+        <li>Notion</li>
+        <li>Basecamp</li>
+        <li>Google Suite</li>
+        <li>MS Office</li>
+
       </ul>
       </div>
       </section>

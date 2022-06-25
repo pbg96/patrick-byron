@@ -4,8 +4,8 @@ function Contact() {
     return (
         <section class="contact" id="contact">
         <div class="contact-message" data-aos="fade-in">
-        <h3>Don't be shy!</h3>
-        <h6>Something's boggling your mind? Just HMU!</h6>
+        <h3>Ready to work with me?</h3>
+        <h6>Hit me up on the form below!</h6>
         </div>
         <Contactform />
     </section>

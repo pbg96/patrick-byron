@@ -153,15 +153,6 @@ h6 {
   font-size: 10px;
 }
 
-.logo-text {
-  font-family: futura-pt, "Libre Franklin", sans-serif;
-  font-style: normal;
-  font-variant: small-caps;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 3px;
-}
-
 /* BUTTON STYLES */
 .btn-default {
   width: 200px;
@@ -208,20 +199,17 @@ h6 {
   height: 64px;
   top: 0;
   justify-content: space-between;
-  display: inline-flex;
   padding: 1rem 1rem;
   position: fixed;
-  z-index: 100;
-  background: rgba(255, 255, 255, 0.65);
-  backdrop-filter: blur(19px);
-  -webkit-backdrop-filter: blur(19px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 1;
+  background-color: var(--clr-primary-light);
 }
 
 .scrolled {
   position: sticky;
   top: 0;
   left: 0;
+  background-color: lightblue;
 }
 
 .logo {
@@ -253,12 +241,10 @@ h6 {
   transition: opacity 0.3s ease-in-out;
   overflow: hidden;
   position: fixed;
-  top: 64px;
   width: 100%;
   height: 100%;
   background-color: var(--clr-primary-light);
   padding-left: 1rem;
-  padding-top: 1rem;
   padding-right: 1rem;
   display: flex;
   flex-direction: column;
@@ -352,8 +338,7 @@ h6 {
 /* SMALL MOBILE */
 .hero {
   width: 100vw;
-  height: 110vh;
-  top: 64px;
+  height: 90vh;
   background: var(--clr-primary);
   display: flex;
   justify-items: center;
@@ -510,11 +495,9 @@ h6 {
   width: 100%;
   /* height: 150vh; */
   background-color: var(--clr-secondary);
-  top: 64px;
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-bottom: 5rem;
 }
 
 .work-message {
@@ -538,7 +521,7 @@ h6 {
 
 .portfolio-grid {
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   z-index: 2;
   overflow: hidden;
@@ -553,7 +536,7 @@ h6 {
   align-items: center;
   font-size: 2rem;
   box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
-  height: 400px;
+  height: 250px;
   border-radius: 0px;
   transition: all 500ms;
   overflow: hidden;
@@ -570,10 +553,7 @@ h6 {
   position: absolute;
   bottom: 0rem;
   color: var(--clr-primary);
-  background: rgba(34, 34, 34, 0.75);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(16.5px);
-  -webkit-backdrop-filter: blur(16.5px);
+  background-color: rgba(34, 34, 34, 0.75);
   width: 100%;
   padding: 0.5rem;
 }
@@ -619,8 +599,6 @@ h6 {
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 .contact-message {
@@ -757,7 +735,7 @@ h6 {
 }
 
 .about-designer {
-  padding: 6rem 1rem 1rem 1rem;
+  padding: 3rem 1rem 1rem 1rem;
   background: var(--clr-primary);
 }
 
@@ -827,7 +805,7 @@ h6 {
   }
 
   .about-designer {
-    padding: 4rem;
+    padding: 2rem;
     display: flex;
     flex-direction: row;
   }
@@ -861,10 +839,9 @@ h6 {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
-  top: 64px;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 5rem;
+  padding-top: 1rem;
   padding-bottom: 5rem;
   background: var(--clr-primary);
 }
@@ -898,7 +875,7 @@ h6 {
   .case-study {
     padding-left: 5rem;
     padding-right: 5rem;
-    padding-top: 5.5rem;
+    padding-top: 2.5rem;
   }
 }
 /* LAPTOP SCREEN */
@@ -906,7 +883,7 @@ h6 {
   .case-study {
     padding-left: 10rem;
     padding-right: 10rem;
-    padding-top: 5.5rem;
+    padding-top: 2.5rem;
   }
 }
 /* ABSTRACTS */

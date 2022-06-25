@@ -1,5 +1,6 @@
 import Workcard from './workcard'
 import { Data } from '../data/work'
+import DownloadCv from './DownloadCv';
 
 function Work() {
     return (
